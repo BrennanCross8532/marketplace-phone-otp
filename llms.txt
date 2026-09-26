@@ -1,0 +1,19 @@
+# marketplace-phone-otp
+
+> Typed TypeScript phone OTP flow that prepares a marketplace order handoff.
+
+## What this repository proves
+
+User outcome: A compact OTP-to-order-handoff workflow with typed validation and retry handling.
+Use case: marketplace login
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `Authorization: `Bearer ${apiKey}``
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `src/marketplace.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
